@@ -1,3 +1,4 @@
+#ZADANIE 6
 #Uruchom ponizszy kod.
 #Wyjasnij (opisz) jaki algorytm jest przez niego realizowany?
 

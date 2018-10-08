@@ -1,3 +1,4 @@
+#ZADANIE 1
 #Uruchom ponizszy kod.
 #Kod demonstruje uzycie kilku funkcji numerycznych pochodzacych z biblioteki.
 #Podstawowa biblioteka funkcji numerycznych to NumPy.
@@ -10,7 +11,7 @@ import numpy as np
 #tworz zmienną x
 x=np.pi/3
 
-#oblicz wartosci f trygonometrycznych
+#oblicz wartosci funkcji trygonometrycznych
 print("sin(%f) = %f" % (x,np.sin(x)))
 print("cos(%f) = %f" % (x,np.cos(x)))
 print("tan(%f) = %f" % (x,np.tan(x)))

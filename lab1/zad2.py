@@ -1,3 +1,4 @@
+#ZADANIE 2
 #Napisz program drukujacy tablice wartosci 4 funkcji trygonometrycznych dla podanego zakresu [xp, xk].
 #Wartosci xp i xk moga byc hardkodowane w programie.
 

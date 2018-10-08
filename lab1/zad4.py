@@ -1,3 +1,4 @@
+#ZADANIE 4
 #Napisz program obliczajacy i drukujacy rozwiazanie rownania kwadratowego.
 #Wykonaj test programu dla uzyskania rozwiazan rzeczywistych i zespolonych.
 #Porownaj dzialanie programu z www.wolframalpha.com.
@@ -10,22 +11,19 @@ c=9
 
 if a==0 and b==0 and c==0:
     print("Rownanie tozsame")
-    
 elif a==0 and b==0 and c!=0:
     print("Rownanie sprzeczne")
-
 elif a==0:
     print("Rownanie liniowe")
     x1=-c/b
-    print("x1 = %f" % (x1))
-    
+    print("x1 = %f" % x1)
 elif a!=0:
     print("Rownanie kwadratowe")
     delta=(b*b)-(4*a*c)
     if delta==0:
         print("Delta rowna 0")
         x1=-b/(2*a)
-        print("x1 = %f" % (x1))
+        print("x1 = %f" % x1)
     if delta>0:
         print("Delta wieksza od 0")
         p=math.sqrt(delta)

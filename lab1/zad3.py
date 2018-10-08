@@ -1,3 +1,4 @@
+#ZADANIE 3
 #Napisz program drukujacy N kolejnych liczb parzystych.
 #Wykorzystaj petle 'for'.
 
