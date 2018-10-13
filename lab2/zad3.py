@@ -1,7 +1,7 @@
 #Zadanie 3
 #Napisz funkcje suma i funkcje iloczyn, ktora zwraca wynik sumy oraz iloczynu.
 #Funkcja ma posiadac nastepujace parametry: f – funkcja, xp – poczatek zakresu, xk – koniec zakresu, k – krok.
-#Przetestuj dzialanie funkcji dla zakresu xp=-3.14 , xk = 3.14 i kroku 0.01.
+#Przetestuj dzialanie funkcji dla zakresu xp=-3.14, xk = 3.14 i kroku 0.01.
 #Napisz wlasna funkcje realizujaca f(x)=1/x.
 #Podstaw ja do funkcji suma i iloczyn.
 #Podstaw rowniez funkcje f(x)=sin(x) (z biblioteki numpy: numpy.sin()).
