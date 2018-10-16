@@ -1,4 +1,5 @@
-#Funkcję rysuj z zadania 4 wyposaz w parametr opcja=1.
+#ZADANIE 5
+#Funkcje rysuj z zadania 4 wyposaz w parametr opcja=1.
 #Gdy opcja=1 to wlaczona jest siatka oraz kropki w punktach dla ktorych liczona byla funkcja.
 
 import matplotlib.pyplot as plt

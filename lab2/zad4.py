@@ -1,4 +1,4 @@
-#Zadanie 4
+#ZADANIE 4
 #Napisz funkcje rysuj, ktora umozliwi rysowanie wykresow funkcji przekazanych jako parametr.
 #Funkcja ma posiadac nastepujace parametry: f – funkcja, xp – poczatek zakresu, xk – koniec zakresu, k – krok.
 #Funkcja ma miec zaimplementowana pelna procedure rysowania przy uzyciu 'plot' (biblioteka matplotlib.pyplot).

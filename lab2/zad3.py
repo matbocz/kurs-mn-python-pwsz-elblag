@@ -1,4 +1,4 @@
-#Zadanie 3
+#ZADANIE 3
 #Napisz funkcje suma i funkcje iloczyn, ktora zwraca wynik sumy oraz iloczynu.
 #Funkcja ma posiadac nastepujace parametry: f – funkcja, xp – poczatek zakresu, xk – koniec zakresu, k – krok.
 #Przetestuj dzialanie funkcji dla zakresu xp=-3.14, xk = 3.14 i kroku 0.01.
