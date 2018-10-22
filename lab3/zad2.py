@@ -1,3 +1,4 @@
+#ZADANIE 2
 #Oblicz blad wzgledny i bezwzgledny,
 #wyciagnij poprawne wnioski nt. Implementacji funkcji z zadania 1.
 #Zestaw bledy dla nastepujacych wariantow:
