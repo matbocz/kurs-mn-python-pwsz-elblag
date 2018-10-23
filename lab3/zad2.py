@@ -52,7 +52,7 @@ while x<=0:
     Bbw=np.abs(tsin(x)-np.sin(x))
     Bw=(Bbw/x)*100
     print('sin(%.2f)=%.12f, tsin(%.2f)=%.12f, Bbw=%.17f, Bw=%.17f' % (x,np.sin(x),x,tsin(x),Bbw,Bw))
-    x=x+0.1
+    x=x+1
     
 x=0.1
 while x<=np.pi/4:
@@ -66,14 +66,14 @@ while x<=3*np.pi:
     Bbw=np.abs(tsin(x)-np.sin(x))
     Bw=(Bbw/x)*100
     print('sin(%.2f)=%.12f, tsin(%.2f)=%.12f, Bbw=%.17f, Bw=%.17f' % (x,np.sin(x),x,tsin(x),Bbw,Bw))
-    x=x+0.1
+    x=x+1
     
 x=(-3)*np.pi
 while x<=0:
     Bbw=np.abs(tcos(x)-np.cos(x))
     Bw=(Bbw/x)*100
     print('cos(%.2f)=%.12f, tcos(%.2f)=%.12f, Bbw=%.17f, Bw=%.17f' % (x,np.cos(x),x,tcos(x),Bbw,Bw))
-    x=x+0.1
+    x=x+1
     
 x=0.1
 while x<=np.pi/4:
@@ -87,14 +87,14 @@ while x<=3*np.pi:
     Bbw=np.abs(tcos(x)-np.cos(x))
     Bw=(Bbw/x)*100
     print('cos(%.2f)=%.12f, tcos(%.2f)=%.12f, Bbw=%.17f, Bw=%.17f' % (x,np.cos(x),x,tcos(x),Bbw,Bw))
-    x=x+0.1
+    x=x+1
     
 x=1
 while x<=20:
     Bbw=np.abs(texp(x)-np.exp(x))
     Bw=(Bbw/x)*100
     print('exp(%.2f)=%.12f, texp(%.2f)=%.12f, Bbw=%.17f, Bw=%.17f' % (x,np.exp(x),x,texp(x),Bbw,Bw))
-    x=x+0.1
+    x=x+1
 
 x=0.1
 while x<=1:
@@ -105,21 +105,21 @@ while x<=1:
     
 x=-np.pi
 while x<=2:
-    Bbw=np.abs(texp(x)-np.exp(x))
+    Bbw=np.abs(ttan(x)-np.tan(x))
     Bw=(Bbw/x)*100
     print('tan(%.2f)=%.12f, ttan(%.2f)=%.12f, Bbw=%.17f, Bw=%.17f' % (x,np.tan(x),x,ttan(x),Bbw,Bw))
-    x=x+0.1
+    x=x+1
     
 x=0.1
 while x<=np.pi/2:
-    Bbw=np.abs(texp(x)-np.exp(x))
+    Bbw=np.abs(ttan(x)-np.tan(x))
     Bw=(Bbw/x)*100
     print('tan(%.2f)=%.12f, ttan(%.2f)=%.12f, Bbw=%.17f, Bw=%.17f' % (x,np.tan(x),x,ttan(x),Bbw,Bw))
     x=x+0.1
     
 x=-np.pi/2
 while x<=np.pi/2:
-    Bbw=np.abs(texp(x)-np.exp(x))
+    Bbw=np.abs(ttan(x)-np.tan(x))
     Bw=(Bbw/x)*100
     print('tan(%.2f)=%.12f, ttan(%.2f)=%.12f, Bbw=%.17f, Bw=%.17f' % (x,np.tan(x),x,ttan(x),Bbw,Bw))
     x=x+0.1
