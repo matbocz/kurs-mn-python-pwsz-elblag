@@ -36,7 +36,7 @@ print("wartosci dokladne: xval = %.2f, yval = %.2f" % (1,np.exp(np.cos(1))))
 pylab.plot(x,y,'o-',label="punkty danych")
 pylab.show()
 
-xval = [i for i in np.arange(-np.pi,np.pi,0.08)]
+xval = [i for i in np.arange(-np.pi,np.pi,0.1)]
 yval = []
 for xv in xval:
     yval.append(interpolacja_lagrange(x,y,xv))
