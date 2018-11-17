@@ -1,4 +1,4 @@
-#Zadanie 2
+#ZADANIE 2A
 #Napisz program realizujacy interpolacje za pomoca funkcji numpy.polyfit i numpy.polyval dla zbioru danych wejsciowych.
 #Przyjmij, że zbior ten jest dwuwymiarowy.
 #Pokaż testbench implementacji dla zbiorow danych pierwotnych wygenerowanych wg funkcji:

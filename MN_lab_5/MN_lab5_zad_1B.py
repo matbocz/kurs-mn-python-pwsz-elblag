@@ -1,4 +1,4 @@
-#Zadanie 1B
+#ZADANIE 1B
 #Napisz program realizujacy interpolacje za pomoca funkcji scipy.interpolaste.interp1d dla zbioru danych wejsciowych.
 #Przyjmij, ze zbior ten jest dwuwymiarowy.
 #Pokaz testbench implementacji dla zbiorow danych pierwotnych wygenerowanych wg funkcji:
