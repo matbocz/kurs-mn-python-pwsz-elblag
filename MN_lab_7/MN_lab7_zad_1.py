@@ -1,9 +1,15 @@
 #ZADANIE 1
-#Korzystajac z kodu zawartym w pliku lab7 approx polynomial wykonaj nastepujace eksperymenty:
-#– wygeneruj dane zbioru aproksymowanego stosujac funkcje f(x) = ax6 + bx2 +cx + random();
-#przyjmij nastepujace wartosci wspolczynnikow:
-#a = liczba liter imienia, b = liczba liter nazwiska, c = numer domu adresu zamieszkania
-#– wykonaj aproksymacje wielomianowa dla wielomianow stopnia m=3,5,7,10
+#Korzystajac z kodu zawartym w pliku lab7 approx polynomial
+#wykonaj nastepujace eksperymenty:
+#- wygeneruj dane zbioru aproksymowanego stosujac funkcje 
+#f(x) = ax6 + bx2 +cx + random(); przyjmij nastepujace wartosci
+#wspolczynnikow: a = liczba liter imienia, b = liczba liter nazwiska,
+#c=numer domu adresu zamieszkania
+#- wykonaj aproksymacje wielomianowa dla wielomianow stopnia
+#m=3,5,7,10
+#Wyciagnij wnioski i opisz w sprawozdaniu. Skomentuj w sprawozdaniu
+#budowe programu przedstawionego w powyzszym przykladzie.
+
 
 import numpy as np
 import math
