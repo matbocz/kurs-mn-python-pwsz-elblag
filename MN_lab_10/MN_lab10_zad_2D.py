@@ -1,4 +1,4 @@
-#ZADANIE 2B
+#ZADANIE 2D
 #Wykorzystaj metode Kramera do znalezienia rozwiazan
 #ukladow rownan a) – d). Wykonaj obliczenia przy uzyciu
 #programu napisanego w Python.
