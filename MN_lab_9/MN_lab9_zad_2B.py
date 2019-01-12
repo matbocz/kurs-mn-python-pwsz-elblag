@@ -1,26 +1,26 @@
 #ZADANIE 2B
-#Napisz program realizujacy poszukiwanie miejsc zerowych
-#funkcji a) – b). Wykorzystaj metode siecznych oraz metode Newtona-
-#Raphsona. Stworz odpowiednie funkcje implementujace wymienione
-#metody poszukiwania miejsc zerowych. Dobierz odpowiednio obszary
-#wyszukiwania. Wykonaj analize bledow. Opisz w sprawozdaniu wnioski.
+#Znajdz miejsca zerowe funkcji a) – c) wykorzystujac funkcje
+#biblioteczne: scipy.optimize.riddler(), scipy.optimize.brenth(),
+#scipy.optimize.bisect(), scipy.optimize.newton(). Omow w sprawozdaniu
+#bledy obliczen. Wykonaj test szybkosci obliczen wymienionych funkcji
+#dla liczby wywolan rownej 100.
 
 import scipy.optimize as opt
 import timeit
 
-f = lambda x: x**4 - 6.4 * x**3 + 6.45 * x**2 + 20.538 * x - 31.752
+f = lambda x: (1 / ((x - 0.3)**2 + 0.01)) - (1 / ((x - 0.8)**2) + 0.04)
 
 def bis(f):
-    return opt.bisect(f, -2, 2)
+    return opt.bisect(f, 0, 1)
 
 def newt(f):
-    return opt.newton(f, -2)
+    return opt.newton(f, -0.2)
 
 def ridd(f):
-    return opt.ridder(f, -2, 2)
+    return opt.ridder(f, 0, 1)
 
 def bren(f):
-    return opt.brenth(f, -2, 2)
+    return opt.brenth(f, 0, 1)
 
 def test():
     L = []
@@ -29,22 +29,22 @@ def test():
 
 if __name__ == '__main__':
     print("Test metody bisekcji - funkcja biblioteczna")
-    print("x0 = ", opt.bisect(f, -2, 2))
+    print("x0 = ", opt.bisect(f, 0.5, 1))
     print("Czas obliczeń: ")
     print(timeit.timeit("bis(f)", number = 100, setup = "from __main__ import f, bis"))
     
     print("\nTest metody NR - funkcja biblioteczna")
-    print("x0 = ", opt.newton(f, -2))
+    print("x0 = ", opt.newton(f, 0.5))
     print("Czas obliczeń: ")
     print(timeit.timeit("newt(f)", number = 100, setup = "from __main__ import f, newt"))
     
     print("\nTest metody Ridder - funkcja biblioteczna")
-    print("x0 = ", opt.ridder(f, -2, 2))
+    print("x0 = ", opt.ridder(f, 0.5, 1))
     print("Czas obliczeń: ")
     print(timeit.timeit("ridd(f)", number = 100, setup = "from __main__ import f, ridd"))
     
     print("\nTest metody Brenth - funkcja biblioteczna")
-    print("x0 = ", opt.brenth(f, -2, 2))
+    print("x0 = ", opt.brenth(f, 0.5, 1))
     print("Czas obliczeń: ")
     print(timeit.timeit("bren(f)", number = 100, setup = "from __main__ import f, bren"))
     

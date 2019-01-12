@@ -1,9 +1,9 @@
 #ZADANIE 2A
-#Napisz program realizujacy poszukiwanie miejsc zerowych
-#funkcji a) – b). Wykorzystaj metode siecznych oraz metode Newtona-
-#Raphsona. Stworz odpowiednie funkcje implementujace wymienione
-#metody poszukiwania miejsc zerowych. Dobierz odpowiednio obszary
-#wyszukiwania. Wykonaj analize bledow. Opisz w sprawozdaniu wnioski.
+#Znajdz miejsca zerowe funkcji a) – c) wykorzystujac funkcje
+#biblioteczne: scipy.optimize.riddler(), scipy.optimize.brenth(),
+#scipy.optimize.bisect(), scipy.optimize.newton(). Omow w sprawozdaniu
+#bledy obliczen. Wykonaj test szybkosci obliczen wymienionych funkcji
+#dla liczby wywolan rownej 100.
 
 import scipy.optimize as opt
 import timeit
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     print(timeit.timeit("bis(f)", number = 100, setup = "from __main__ import f, bis"))
     
     print("\nTest metody NR - funkcja biblioteczna")
-    print("x0 = ", opt.newton(f, -0.2))
+    print("x0 = ", opt.newton(f, -0.5))
     print("Czas obliczeń: ")
     print(timeit.timeit("newt(f)", number = 100, setup = "from __main__ import f, newt"))
     
