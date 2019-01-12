@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def fxA(x):
-    return 7 * x**5 + 9 * x**2 - 2 * x
+    return 7 * x**5 + 9 * x**2 - 5 * x
 
 def fxB(x):
     return (1 / ((x - 0.3)**2 + 0.01)) - (1 / ((x - 0.8)**2) + 0.04)
@@ -22,10 +22,10 @@ def linearIncremental(fx, xstart, xd, maxincr):
         x = xstart + i * xd
         if fstart * fx(x) < 0:
             break
-        if fstart * fx(x) > 0:
-            raise Exception("Nie znaleziono rozwiazania!")
-        else:
-            return x - (xd * fx(x)) / (fx(x)-fx(x - xd))
+    if fstart * fx(x) > 0:
+        raise Exception("Nie znaleziono rozwiazania!")
+    else:
+        return x - (xd * fx(x)) / (fx(x)-fx(x - xd))
 
 def bisection(fx, a, b, err):
     while np.absolute(b - a) > err:

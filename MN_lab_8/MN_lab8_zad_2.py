@@ -19,8 +19,10 @@ def bisection(fx, a, b, err):
     return b - (b - a) * fx(b) / (fx(b) - fx(a))
 
 print("Najmniejsza wartosc miejsca zerowego funkcji")
+
 x = np.arange(-2, 2, 0.1)
 plt.plot(x, fx(x), 'r.')
 plt.grid(True)
 plt.show()
+
 print("x = ", bisection(fx, -2, 2, 0.001))
